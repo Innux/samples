@@ -1,0 +1,45 @@
+.box {
+    background: #eeeeee;
+    padding: 20px;
+    border: 1px solid #999;
+    height: 800px;
+    min-height: 420px;
+}
+
+.left-box,.mid-box,.right-box{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #999999;
+    position: relative;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+.left-box{
+    width: 160px;
+    float: left;
+}
+.left-box img{
+    float: left;
+}
+.left-box h3{
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+}
+.mid-box{
+    width: auto;
+    margin: 0 220px 0 220px;
+}
+.right-box{
+    width: 150px;
+    float: right;
+}
+.right-box img{
+    margin-bottom: 20px;
+}
+.right-box img:last-child{
+    margin-bottom: 0px;
+}
