@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4525d0-9aa2-47c1-93a3-178867449df8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/网页1/images/headerbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/网页1/images/sec_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/网页1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/网页1/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/网页1/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/三栏式布局/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/三栏式布局/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/网页1/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="69" lean-forward="true" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -64,6 +66,7 @@
         <option value="$PROJECT_DIR$/网页1/main.css" />
         <option value="$PROJECT_DIR$/登录/index.html" />
         <option value="$PROJECT_DIR$/email/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -143,15 +146,16 @@
       <workItem from="1529113695972" duration="3793000" />
       <workItem from="1529203431208" duration="1738000" />
       <workItem from="1529248685910" duration="11000" />
-      <workItem from="1529335811771" duration="6916000" />
+      <workItem from="1529335811771" duration="7324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16817000" />
+    <option name="totallyTimeSpent" value="17225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="345" y="57" width="1593" height="803" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14438167" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -316,6 +320,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="69" lean-forward="true" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
         </state>
       </provider>
     </entry>
