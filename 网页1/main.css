@@ -1,0 +1,183 @@
+input,
+textarea {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    outline: none;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.main{
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
+}
+.text{
+    text-align: center;
+}
+.list{
+    overflow: hidden;
+}
+.title{
+    font-size: 42px;
+}
+.box{
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-fir{
+    position: relative;
+    height: 990px;
+    color: #ffffff;
+}
+.box-fir:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 1660px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    background-image: url(images/headerbg.png);
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.box-fir .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.box-fir .title{
+    font-size: 62px;
+    margin-bottom: 50px;
+}
+.box-fir .text{
+    width: 770px;
+    font-size: 20px;
+    opacity: .7;
+}
+
+.box-fir .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    margin-top: 95px;
+    border: 1px solid rgba(255,255,255,.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box-fir .form-text{
+    margin: 10px 0 40px;
+    font-size: 12px;
+    opacity: .3;
+}
+.box-fir .form-main{
+    line-height: 50px;
+}
+
+.box-fir .form-input{
+    width: 292px;
+    height: 50px;
+    padding: 0 21px;
+    margin-right: 56px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.box-fir .form-input::placeholder{
+    color: rgba(255,255,255,.3);
+}
+.box-fir .form-submit{
+    width: 125px;
+    height: 50px;
+    margin-left: -10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #141414;
+    background-color:#fff;
+    text-align: center;
+}
+/*2*/
+.box-sec{
+    height: 710px;
+    text-align: center;
+}
+.box-sec .main{
+    width: 1040px;
+}
+.box-sec .title{
+    width: 700px;
+    padding-top: 133px;
+    margin: 0 auto 70px;
+    line-height: 1;
+}
+
+.box-sec .text{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.box-sec .item{
+    float: left;
+    position: relative;
+    width: 440px;
+    height: 166px;
+    padding-left: 74px;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-sec .item:nth-child(even){
+    margin-left: 160px;
+}
+
+.box-sec .item-title{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.box-sec .item-text{
+    color: rgba(0,0,0,.7);
+}
+
+.box-sec .icon{
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/sec_icon.png);
+}
+.box-sec .icon-sec{
+    background-position: 0 -60px;
+}
+.box-sec .icon-thi{
+    background-position: 0 -120px;
+}
+.box-sec .icon-fou{
+    background-position: 0 bottom;
+}
