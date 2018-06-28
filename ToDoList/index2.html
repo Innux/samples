@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .finish-active {
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+<div id="head">
+    <input id="user-input" type="text">
+    <button id="add-btn">add</button>
+</div>
+<div id="list-container">
+    <!--<div class="item">-->
+    <!--<button class="finish-btn">完成</button>-->
+    <!--<button class="delete-btn">删除</button>-->
+    <!--<span class="item-span">test</span>-->
+    <!--</div>-->
+</div>
+
+<script>
+    var addBtn = document.querySelector('#add-btn');
+    var list = document.querySelector('#list-container');
+    var userInput = document.querySelector('#user-input');
+
+    var taskList = [];
+
+    //添加按钮事件
+    addBtn.addEventListener('click', function () {
+        var val = userInput.value;
+        var task = {
+            time: getCurrentTime(),
+            content: val,
+        };
+        taskList.push(task);
+        buildList(task);
+        saveTodo();
+        userInput.value = '';
+    });
+
+    //任务按钮事件（完成删除）
+    list.addEventListener('click', function (e) {
+        var target = e.target;
+        if (target.classList.contains('finish-btn')) {
+            toggleClass(target.parentElement.children[2], 'finish-active');
+        }
+        if (target.classList.contains('delete-btn')) {
+            var index = getIndexOfElement(target);
+            target.parentElement.remove();
+            console.log('delete index'+index);
+            taskList.splice(index, 1);
+            saveTodo();
+        }
+    })
+
+    //生成list
+    var buildList = function (task) {
+        var item = buildItem(task);
+        list.insertAdjacentHTML('afterbegin', item);
+    }
+    //生成item
+    var buildItem = function (task) {
+        return `
+            <div class="item">
+                <button class="finish-btn">完成</button>
+                <button class="delete-btn">删除</button>
+                <span class="item-span">${task.content}&nbsp;&nbsp;${task.time}</span>
+            </div>
+        `;
+    }
+    //返回当前元素在父元素中的下标
+    var getIndexOfElement = function (e) {
+        var parent = e.parentElement;
+        for (var i = 0; i < parent.children.length; i++) {
+            var child = parent.children[i];
+            if (child === e) {
+                return i;
+            }
+        }
+    }
+
+    var saveTodo = function () {
+        var s = JSON.stringify(taskList);
+        localStorage.taskList = s;
+        console.log('saveTodo:' + taskList.length);
+    }
+
+    var loadTodo = function () {
+        var s = localStorage.taskList;
+        console.log('loadTodo s:' + s);
+        console.log('loadTodo:' + taskList.length);
+        return JSON.parse(s);
+    }
+    //获取当前时间
+    var getCurrentTime = function () {
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hour = date.getHours();
+        var minutes = date.getMinutes();
+
+        var res = `${year}年${month}月${day}日 ${hour}:${minutes}`;
+        // console.log(res);
+        return res;
+    }
+
+    var toggleClass = function (element, className) {
+        if (element.classList.contains(className)) {
+            element.classList.remove(className);
+        } else {
+            element.classList.add(className);
+        }
+    }
+
+    taskList = loadTodo();
+
+    for (var i = 0; i < taskList.length; i++) {
+        var task = taskList[i];
+        console.log('init ' + task.content);
+        buildList(task);
+    }
+</script>
+</body>
+</html>
