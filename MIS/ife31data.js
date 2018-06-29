@@ -35,13 +35,3 @@ let sourceData = [{
     region: "华南",
     sale: [10, 40, 10, 6, 5, 6, 8, 6, 6, 6, 7, 26]
 }]
-
-var regionSpan = document.getElementById('region');
-var productSpan = document.getElementById('product')
-var regionBoxes = document.getElementsByClassName('region-box');
-var productBoxes = document.getElementsByClassName('product-box');
-var tableWrapper = document.getElementById('table-wrapper');
-var regionAll = document.getElementById('region-all');
-var productAll = document.getElementById('product-all');
-var regionArray = ['华东', '华南', '华北'];
-var productArray = ['手机', '笔记本', '智能音箱'];
