@@ -1,3 +1,4 @@
+//对象转数组
 var obj2Array = function (obj) {
     var array = [];
     var compareResult = getCompare();

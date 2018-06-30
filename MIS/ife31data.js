@@ -35,3 +35,13 @@ let sourceData = [{
     region: "华南",
     sale: [10, 40, 10, 6, 5, 6, 8, 6, 6, 6, 7, 26]
 }]
+
+var regionDiv = document.querySelector('#region');
+// var regionBox = document.querySelectorAll('.region-box');
+var regionBox = document.getElementsByName('region');
+var regionAll = document.querySelector('#region-all');
+var productDiv = document.querySelector('#product');
+// var productBox = document.querySelectorAll('.product-all');
+var productBox = document.getElementsByName('product');
+var productAll = document.querySelector('#product-all');
+var tableWrapper = document.querySelector('#table-wrapper');

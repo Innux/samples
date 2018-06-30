@@ -7,63 +7,54 @@
         span {
             margin-left: 10px;
         }
+
+        svg, canvas {
+            background-color: rgba(252, 252, 212, 0.54);
+            margin: 5px;
+        }
+
+        #choose-div {
+            border: 1px solid;
+            display: inline-block;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-<div id="product">
-    <span>产品：</span>
-    <input type="checkbox" id="product-all">全部
-    <input type="checkbox" name="product" class="product-box" value="手机">手机
-    <input type="checkbox" name="product" class="product-box" value="笔记本">笔记本
-    <input type="checkbox" name="product" class="product-box" value="智能音箱">智能音箱
-</div>
-<br>
-<div id="region">
-    <span>地区：</span>
-    <input type="checkbox" id="region-all">全部
-    <input type="checkbox" name="region" class="region-box" value="华东">华东
-    <input type="checkbox" name="region" class="region-box" value="华北">华北
-    <input type="checkbox" name="region" class="region-box" value="华南">华南
+<div id="choose-div">
+    <div id="product">
+        <span>产品：</span>
+        <input type="checkbox" id="product-all">全部
+        <input type="checkbox" name="product" class="product-box" value="手机">手机
+        <input type="checkbox" name="product" class="product-box" value="笔记本">笔记本
+        <input type="checkbox" name="product" class="product-box" value="智能音箱">智能音箱
+    </div>
+    <br>
+    <div id="region">
+        <span>地区：</span>
+        <input type="checkbox" id="region-all">全部
+        <input type="checkbox" name="region" class="region-box" value="华东">华东
+        <input type="checkbox" name="region" class="region-box" value="华北">华北
+        <input type="checkbox" name="region" class="region-box" value="华南">华南
+    </div>
 </div>
 
+<div>
+    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg-main">
+        <line x1="50" y1="50" x2="50" y2="350" stroke="black" fill="transparent" stroke-width="1"/>
+        <line x1="50" y1="350" x2="550" y2="350" stroke="black" fill="transparent" stroke-width="1"/>
+    </svg>
+    <canvas width="600" height="410" id="canvas"></canvas>
+</div>
 
 <!--表格区域-->
 <div id="table-wrapper"></div>
 
 <!--数据-->
 <script src="ife31data.js"></script>
-<script>
-    var regionDiv = document.querySelector('#region');
-    // var regionBox = document.querySelectorAll('.region-box');
-    var regionBox = document.getElementsByName('region');
-    var regionAll = document.querySelector('#region-all');
-    var productDiv = document.querySelector('#product');
-    // var productBox = document.querySelectorAll('.product-all');
-    var productBox = document.getElementsByName('product');
-    var productAll = document.querySelector('#product-all');
-    var tableWrapper = document.querySelector('#table-wrapper');
-
-</script>
-
 <script src="checkbox.js"></script>
 <script src="table.js"></script>
-<script>
-    regionDiv.onchange = function (e) {
-        check('region');
-        showTable();
-    }
-    productDiv.onchange = function (e) {
-        check('product');
-        showTable();
-    }
-    regionAll.onclick = function () {
-        checkAll('region');
-        showTable();
-    }
-    productAll.onclick = function () {
-        checkAll('product');
-        showTable();
-    }
-</script>
+<script src="bar.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
