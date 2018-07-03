@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        @keyframes rotateBox {
+            from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(-360deg);
+            }
+        }
+        .main {
+            perspective: 400px;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 200px auto;
+            transform-style: preserve-3d;
+        }
+
+        .container:hover {
+            animation: rotateBox 3s linear infinite;
+        }
+
+        .wall {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #4d81fa;
+        }
+
+        .wall:nth-child(1) {
+            transform: translateZ(100px);
+        }
+
+        .wall:nth-child(2) {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .wall:nth-child(3) {
+            transform: rotateX(180deg) translateZ(100px);
+        }
+
+        .wall:nth-child(4) {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .wall:nth-child(5) {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .wall:nth-child(6) {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+    </div>
+</div>
+</body>
+</html>
