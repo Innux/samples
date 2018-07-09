@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db4525d0-9aa2-47c1-93a3-178867449df8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/max/Maria.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/max/Vincent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/max/hcsmlive.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/max/tt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/max/zzg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/min/Maria.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/min/Vincent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/min/hcsmlive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/min/tt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/albumCover/min/zzg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/album.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/album_cover_mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/control_panel_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/player_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/songs_progress_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/images/songs_progress_color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/awbz.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/hn.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/mjtdn.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/qr.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/th.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/lyrics/thh.lrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/And_Then_I_Kissed_Him.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/Brothers.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/Maria.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/There_You'll_Be.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/Vincent.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/awbz.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/fom.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/hn.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/mjtdn.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/qr.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/tennessee.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/th.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/music/thh.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music_player/songData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,6 +16,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="songData.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/music_player/songData.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ToDoList/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -128,12 +100,12 @@
         <option value="$PROJECT_DIR$/3D动效/卡片翻转.html" />
         <option value="$PROJECT_DIR$/效果demo/转盘.html" />
         <option value="$PROJECT_DIR$/效果demo/正方体旋转.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/图片相关/相册/index.html" />
         <option value="$PROJECT_DIR$/图片相关/放大镜/index.html" />
         <option value="$PROJECT_DIR$/music_player/main.css" />
         <option value="$PROJECT_DIR$/music_player/main.js" />
         <option value="$PROJECT_DIR$/music_player/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -169,12 +141,18 @@
             <path>
               <item name="samples" type="b2602c69:ProjectViewProjectNode" />
               <item name="samples" type="462c0819:PsiDirectoryNode" />
-              <item name="music_player" type="462c0819:PsiDirectoryNode" />
+              <item name="ToDoList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="samples" type="b2602c69:ProjectViewProjectNode" />
               <item name="samples" type="462c0819:PsiDirectoryNode" />
-              <item name="ToDoList" type="462c0819:PsiDirectoryNode" />
+              <item name="图片相关" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
+              <item name="图片相关" type="462c0819:PsiDirectoryNode" />
+              <item name="放大镜" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,14 +224,15 @@
       <workItem from="1531023934365" duration="3579000" />
       <workItem from="1531035777130" duration="14000" />
       <workItem from="1531035916520" duration="1074000" />
+      <workItem from="1531100912430" duration="464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84063000" />
+    <option name="totallyTimeSpent" value="84527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="242" y="40" width="1238" height="800" extended-state="0" />
+    <frame x="202" y="28" width="1238" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17528272" />
@@ -517,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/图片相关/相册/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2055">
@@ -558,6 +530,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="104" column="22" lean-forward="true" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
