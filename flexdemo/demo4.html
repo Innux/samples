@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main {
+            width: 400px;
+            border: 1px solid red;
+            height: 200px;
+            display: flex;
+        }
+
+        .div1 {
+            width: 100px;
+            height: 200px;
+            background-color: #4d81fa;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 200px;
+            background-color: #c975ff;
+        }
+
+        .div3 {
+            width: 100px;
+            flex-shrink: 2;
+            /*flex-basis: auto;*/
+            height: 200px;
+            background-color: #faed72;
+            /*flex-grow: 1;*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3">aaa</div>
+    </div>
+</body>
+</html>

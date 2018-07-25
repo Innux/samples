@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+        div{
+            border: 1px solid;
+            box-sizing: border-box;
+            /*margin: 5px;*/
+        }
+
+        /* 以下为整个页面的布局 */
+        .main{
+            display:flex;
+            flex-direction: column;
+            height:100%;
+        }
+
+        .top, .footer{
+            height: 50px;
+        }
+
+        .body{
+            flex:1;
+            display: flex;
+        }
+
+        .body-main{
+            flex: 1;
+            background-color: yellow;
+        }
+
+        .body-left, .body-right{
+            width: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                flex: 1;
+            }
+            .top,
+            .body,
+            .footer {
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="top">header</div>
+    <div class="body">
+        <div class="body-left">left</div>
+        <div class="body-main">main</div>
+        <div class="body-right">right</div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        #header {
+            height: 150px;
+            background-color: #dddddd;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        #nav {
+            width: 100%;
+            height: 50px;
+            background: #333;
+        }
+
+        #nav ul {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        #nav li {
+            list-style: none;
+            float: left;
+        }
+
+        #nav li a {
+            font-size: 16px;
+            height: 50px;
+            color: #fff;
+            padding: 0 30px;
+            line-height: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        #nav li a:hover {
+            background: #666;
+        }
+
+        .div1 {
+            height: 500px;
+            background-color: #888888;
+            text-align: center;
+        }
+
+        #div2 {
+            height: 500px;
+            background-color: rgba(170, 170, 170, 0.55);
+            text-align: center;
+        }
+
+        .div2 {
+            height: 500px;
+            background-color: rgba(170, 170, 170, 0.55);
+            text-align: center;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation-name: show-nav;
+            animation-duration: 0.5s;
+        }
+
+        @keyframes show-nav {
+            from {
+                top: -50px;
+            }
+            to {
+                top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <h2>header</h2>
+</div>
+<div id="nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">秒杀</a></li>
+        <li><a href="#">女装馆</a></li>
+        <li><a href="#">内衣馆</a></li>
+        <li><a href="#">美妆馆</a></li>
+        <li><a href="#">品牌特卖</a></li>
+        <li><a href="#">团购频道</a></li>
+        <li><a href="#">每周上新</a></li>
+    </ul>
+</div>
+<div id="div2" class="div1">
+    <h2>aaa</h2>
+</div>
+<div class="div2">
+    <h2>bbb</h2>
+</div>
+<div class="div1">
+    <h2>aaa</h2>
+</div>
+<div class="div2">
+    <h2>bbb</h2>
+</div>
+
+<script>
+    window.onload = function () {
+        var nav = document.querySelector('#nav');
+        var div2 = document.querySelector('#div2');
+
+        scrollMenu(nav, div2);
+    }
+
+
+    var scrollMenu = function (obj, target) {
+        window.onscroll = function () {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var top = target.offsetTop;
+            if (scrollTop >= top) {
+                obj.classList.add('fixed');
+            } else {
+                obj.classList.remove('fixed');
+            }
+        }
+    }
+</script>
+</body>
+</html>

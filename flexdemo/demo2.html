@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            display: flex;
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+            background-color: #e0e0e0;
+            margin: 10px;
+        }
+
+        .box1 {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box2 {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box3 .item:nth-child(2) {
+
+            align-self: center;
+        }
+
+        .box4 {
+            justify-content: space-between;
+        }
+
+        .box4 .item:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .box5 .item:nth-child(2) {
+            align-self: center;
+        }
+
+        .box5 .item:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .box6 {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: space-between;
+        }
+
+        .box7 {
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 100%;
+        }
+
+        .box8 {
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box9 {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .box10 {
+            flex-wrap: wrap;
+        }
+
+        .column1 {
+            display: flex;
+            flex-basis: 100%;
+        }
+
+        .column1:nth-child(2) {
+            justify-content: center;
+        }
+
+        .column1:nth-child(3) {
+            justify-content: space-between;
+        }
+
+        .row {
+            flex-basis: 100%;
+            display: flex;
+        }
+
+        .row:nth-child(2) {
+            justify-content: center;
+        }
+
+        .row:nth-child(3) {
+            justify-content: space-between;
+        }
+
+        .item {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 4px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="box box1">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box2">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box3">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box4">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box5">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box6">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box7">
+    <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</div>
+
+<div class="box box8">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box9">
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+
+<div class="box box10">
+    <div class="column1">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <div class="column1">
+        <span class="item"></span>
+    </div>
+    <div class="column1">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</div>
+
+</body>
+</html>
